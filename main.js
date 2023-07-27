@@ -74,7 +74,7 @@ function quickSortObj(arr = []) {
         }
     }
 
-    return [...quickSort(left), mid, ...quickSort(right)];
+    return [...quickSortObj(left), mid, ...quickSortObj(right)];
 }
 
 function bubbleSortObj(arr) {
